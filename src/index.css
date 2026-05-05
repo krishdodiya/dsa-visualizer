@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #060e1d;
+  color: #a8c4e0;
+  font-family: "DM Sans", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c1a2e;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b3050;
+  border-radius: 3px;
+  transition: background 0.15s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a4a66;
+}
+
+/* Form elements */
+input[type="range"] {
+  accent-color: #2fb8e8;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(47, 184, 232, 0.25);
+  color: #e8f0f8;
+}
+
+/* Smooth transitions for theme elements */
+.transition-colors {
+  transition-property: color, background-color, border-color;
+  transition-timing-function: ease;
+  transition-duration: 150ms;
+}
+
+/* Focus ring utility */
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(47, 184, 232, 0.2);
+}
